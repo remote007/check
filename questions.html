@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        form{
+            margin: auto;
+            justify-content: center; 
+            align-items: center;
+            height: 620px;
+            width: 600px;
+            border: solid plum;
+            background-color: deeppink;
+        }
+        input{
+            margin-top: 60px;
+            width: 50%;
+            background-color: antiquewhite;
+        }
+        button{
+            height: 30px;
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Index</a></li>
+            <li><a href="">Questions</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="questions_id">Question Statement : </label>
+        <input id="questions_id" type="text"><br>
+        <label for="optA_id">Option A : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="optA_id" type="text"><br>
+        <label for="optB_id">Option B : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="optB_id" type="text"><br>
+        <label for="optC_id">Option C : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="optC_id" type="text"><br>
+        <label for="optD_id">Option D : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="optD_id" type="text"><br>
+        <label for="correct_ans_id">Correct Answer : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="correct_ans_id" type="text"><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button>Add Question </button>
+    </form>
+</body>
+</html>

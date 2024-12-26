@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        li{
+            list-style: none;
+            width: 20px;
+        }
+        ul{
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        form{
+            margin: auto;
+            justify-content: center; 
+            align-items: center;
+            height: 250px;
+            width: 500px;
+            border: solid plum;
+            background-color: deeppink;
+        }
+        input{
+            margin-top: 60px;
+            width: 50%;
+            background-color: antiquewhite;
+        }
+        button{
+            height: 30px;
+            width: 70px;
+        }
+    </style>
+    <script>
+        function verify(){
+            var email = document.getElementById("email_id").value;
+            var password = document.getElementById("password_id").value;
+            if(email=="empher@gmail.com" && password=="empher@123")
+            {
+                alert("Login Success, you are redirecting to quiz page");
+                window.location.href= "http://127.0.0.1:5500/padmini_rai_emp_003/module2/MockEval2/quiz.html";
+            }
+            else
+            {
+                alert("Please enter valid credentials");
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Index</a></li>
+            <li><a href="./questions.html">Questions</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <div>
+        <form >&nbsp;&nbsp;
+            <label for="email_id"> email : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="email_id" type="email">
+            <br>&nbsp;&nbsp;
+            <label for="password_id"> password : </label>
+            <input id="password_id" type="password">
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+            <button onclick="verify()">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
