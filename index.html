@@ -34,13 +34,17 @@
         }
     </style>
     <script>
+        function redirect(){
+            console.log("here");
+            window.location.href= "/quiz.html";
+        }
         function verify(){
             var email = document.getElementById("email_id").value;
             var password = document.getElementById("password_id").value;
             if(email=="empher@gmail.com" && password=="empher@123")
             {
                 alert("Login Success, you are redirecting to quiz page");
-                window.location.href= "http://127.0.0.1:5500/padmini_rai_emp_003/module2/MockEval2/quiz.html";
+                window.location.href = "/quiz.html";
             }
             else
             {
@@ -70,7 +74,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;
-            <button onclick="verify()">Submit</button>
+            <button type="reset" onclick="verify()">Submit</button>
         </form>
     </div>
 </body>
